@@ -1,0 +1,8 @@
+services:
+  containerized-microservice:
+    build:
+      context: .
+      args:
+        - APP_VERSION
+    ports:
+      - 8080:8080
